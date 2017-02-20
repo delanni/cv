@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+       <div id="timeline" style="height: 300px;"></div>
+       <script>
+google.charts.load('current', {'packages':['timeline']});
+google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var container = document.getElementById('timeline');
+  var chart = new google.visualization.Timeline(container);
+  var dataTable = new google.visualization.DataTable();
+
+  dataTable.addColumn({ type: 'string', id: 'Category' });
+  dataTable.addColumn({ type: 'string', id: 'Position' });
+  dataTable.addColumn({ type: 'date', id: 'Start' });
+  dataTable.addColumn({ type: 'date', id: 'End' });
+  dataTable.addRows([
+    [ 'University', 'BUTE: Software Engineering, BSc', new Date(2009, 8, 1), new Date(2013, 1, 4) ],
+    [ 'University', 'BUTE: Software Engineering, MSc', new Date(2013, 1, 14), new Date(2015, 1, 4) ],
+    [ 'University', 'CUB: Business Information Systems, BSc', new Date(2011, 8, 1), new Date(2013, 1, 4) ],
+    [ 'University', 'CUB: Business Information Systems, BSc', new Date(2014, 2, 10), new Date(2016, 2, 4) ],
+
+    [ 'Teaching assistant', 'BUTE: Programming Basics (C, C++)', new Date(2012, 8, 1), new Date(2014, 5, 30) ],
+    [ 'Teaching assistant', 'CUB: Javascript basic', new Date(2014, 8, 1), new Date(2015, 5, 30) ],
+
+    [ 'Work', 'Nokia / NSN: Java Developer Engineer', new Date(2012, 7, 1), new Date(2014, 2, 15) ],
+    [ 'Work', 'Morgan Stanley: Software Developer Intern', new Date(2014, 6, 9), new Date(2014, 9, 9) ],
+    [ 'Work', 'Morgan Stanley: Software Developer Intern', new Date(2015, 1, 20), new Date(2015, 7, 30) ],
+    [ 'Work', 'I-Insight ltd.: Business consultant', new Date(2015, 8, 1), new Date(2016, 5, 30) ],
+    [ 'Work', 'Prezi: Full stack developer (Scala / Typescript)', new Date(2016, 6, 13), new Date() ],
+]);
+
+  chart.draw(dataTable);
+}
+</script>
+</body>
+</html>
