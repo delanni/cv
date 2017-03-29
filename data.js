@@ -113,7 +113,7 @@
     "position": "Inisghts Engineer (big data engineer)",
     "description": "Specializing in solutions that require advanced programming and software engineering knowledge along with analytical and communication skills.",
     "extras": {
-        "technologies": ["Javascript", "Scala", "Three.js", "Ext.js"]
+        "technologies": ["R", "Google App Script", "Shiny", "MySql"]
     }
 }, {
     "category": "Work",
