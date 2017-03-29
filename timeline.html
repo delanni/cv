@@ -1,50 +1,170 @@
 <!DOCTYPE html>
 <html>
-       <head>
-       <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-53641010-10', 'auto');
-  ga('send', 'pageview');
+<head>
+  <style>
+    #details>div {
+      margin-top: 6px;
+    }
+    
+    .tagline {
+      font-size: large;
+      font-weight: bold;
+    }
+    
+    .tech-sticker {
+      margin: 4px;
+      background-color: cadetblue;
+      border-radius: 3px;
+      padding: 3px;
+      user-select: none;
+    }
+    
+    .tech-sticker-list {
+      margin-top: 4px;
+    }
+    
+    .extras {
+      font-size: small;
+    }
+  </style>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-</script>
-       </head>
+    ga('create', 'UA-53641010-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
 <body>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-       <div id="timeline" style="height: 300px;"></div>
-       <script>
-google.charts.load('current', {'packages':['timeline']});
-google.charts.setOnLoadCallback(drawChart);
-function drawChart() {
-  var container = document.getElementById('timeline');
-  var chart = new google.visualization.Timeline(container);
-  var dataTable = new google.visualization.DataTable();
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div> Click the timeline to browse </div>
+  <div id="timeline" style="height: 300px;"></div>
+  <div id="sums"></div>
+  <hr />
+  <div id="details"> </div>
 
-  dataTable.addColumn({ type: 'string', id: 'Category' });
-  dataTable.addColumn({ type: 'string', id: 'Position' });
-  dataTable.addColumn({ type: 'date', id: 'Start' });
-  dataTable.addColumn({ type: 'date', id: 'End' });
-  dataTable.addRows([
-    [ 'University', 'BUTE: Software Engineering, BSc', new Date(2009, 8, 1), new Date(2013, 1, 4) ],
-    [ 'University', 'BUTE: Software Engineering, MSc', new Date(2013, 1, 14), new Date(2015, 1, 4) ],
-    [ 'University', 'CUB: Business Information Systems, BSc', new Date(2011, 8, 1), new Date(2013, 1, 4) ],
-    [ 'University', 'CUB: Business Information Systems, BSc', new Date(2014, 2, 10), new Date(2016, 2, 4) ],
+  <script>
+    var A_MONTH = 1000 * 60 * 60 * 24 * 30.5;
+    var A_YEAR = 1000 * 60 * 60 * 24 * 365;
 
-    [ 'Teaching assistant', 'BUTE: Programming Basics (C, C++)', new Date(2012, 8, 1), new Date(2014, 5, 30) ],
-    [ 'Teaching assistant', 'CUB: Javascript basic', new Date(2014, 8, 1), new Date(2015, 5, 30) ],
+    window.data = [];
+    google.charts.load('current', { 'packages': ['timeline'] });
+    google.charts.setOnLoadCallback(drawChart);
 
-    [ 'Work', 'Nokia / NSN: Java Developer Engineer', new Date(2012, 7, 1), new Date(2014, 2, 15) ],
-    [ 'Work', 'Morgan Stanley: Software Developer Intern', new Date(2014, 6, 9), new Date(2014, 9, 9) ],
-    [ 'Work', 'Morgan Stanley: Software Developer Intern', new Date(2015, 1, 20), new Date(2015, 7, 30) ],
-    [ 'Work', 'I-Insight ltd.: Business consultant', new Date(2015, 8, 1), new Date(2016, 5, 30) ],
-    [ 'Work', 'Prezi: Full stack developer (Scala / Typescript)', new Date(2016, 6, 13), new Date() ],
-]);
+    function drawChart() {
+      fetch('data.js').then(result => result.json(), err => console.error(err)).then(json => {
+        var data = parse(json);
 
-  chart.draw(dataTable);
-}
-</script>
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        google.visualization.events.addListener(chart, 'select', selectHandler.bind(null, chart, data));
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'Category' });
+        dataTable.addColumn({ type: 'string', id: 'Alma' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+
+        dataTable.addRows(data);
+
+        chart.draw(dataTable);
+
+        renderSums(data);
+      }, err => {
+        console.error(err);
+      });
+    }
+
+    function parse(jsonData) {
+      var dataSet = jsonData.map(x => {
+        var row = [x.category, x.name, new Date(x.from), new Date(x.to || Date.now())];
+        row.id = x.id;
+        row.extras = x.extras;
+        row.category = x.category;
+        row.name = x.name;
+        row.from = new Date(x.from);
+        row.to = new Date(x.to || Date.now());
+        row.description = x.description;
+        row.position = x.position;
+        return row;
+      });
+      return dataSet;
+    }
+
+    function renderSums(data) {
+      var schools = data.filter(x => (x.name.toLowerCase().indexOf("bsc") >= 0) || (x.name.toLowerCase().indexOf("msc") >= 0));
+      var work = data.filter(x => x.category.toLowerCase() == "work");
+
+      var timeReducer = (total, next) => total + (next.to - next.from);
+      var totalSchoolTime = schools.reduce(timeReducer, 0);
+      var totalWorkTime = work.reduce(timeReducer, 0);
+
+      document.getElementById("sums").innerHTML = `
+        <div> Total university time: ~ ${asTime(totalSchoolTime)} </div>
+        <div> Total work experience: ~ ${asTime(totalWorkTime)} </div>
+      `;
+    }
+
+    function selectHandler(chart, data) {
+      var selectedObjects = chart.getSelection();
+      if (selectedObjects.length !== 1) {
+        clearDetails();
+      } else {
+        var obj = data[selectedObjects[0].row];
+        renderDetails(obj);
+        ga('send', 'timeline', 'select', obj.name, obj.id);
+      }
+    }
+
+    function asTime(timeSpan) {
+      var years = (timeSpan / A_YEAR) | 0;
+      var months = ((timeSpan % A_YEAR) / A_MONTH) | 0;
+      var pluralized = (timeUnit, count) =>
+        count == 0 ? "" :
+          count == 1 ? `1 ${timeUnit}` :
+            `${count} ${timeUnit}s`;
+      return `${pluralized("year", years)} ${pluralized("month", months)}`;
+    }
+
+    function renderDetails(obj) {
+      var tagline = "";
+      if (obj.category == "Work") {
+        tagline = `${obj.position} @ ${obj.name}`;
+      } else {
+        tagline = `Studying ${obj.name} @ ${obj.category}`;
+      }
+      var duration = `${obj.from.toLocaleDateString()} - ${obj.to.toLocaleDateString()} (~${asTime(obj.to - obj.from)})`;
+
+      var description = obj.description;
+      var extras = "";
+      var techAsStickerList = x => x.map(tech => `<span class='tech-sticker'>${tech}</span>`).join("");
+      if (obj.extras.thesis) {
+        extras = `<div class="thesis"> 
+          <div class="tesis-title"> Thesis: ${obj.extras.thesis.title} </div>
+          <div> ${obj.extras.thesis.description} </div>
+          <div class='tech-sticker-list'> ${techAsStickerList(obj.extras.thesis.technologies)} </div>
+        </div>`;
+      } else if (obj.extras.technologies) {
+        extras = `<div class='tech-sticker-list'> ${techAsStickerList(obj.extras.technologies)} </div>`
+      }
+
+      document.getElementById("details").innerHTML = `
+        <div class='tagline'> ${tagline}, <i class='duration'> ${duration} </i></div>
+        <div class='position-description'> ${description} </div>
+        <div class='extras'> ${extras} </div>
+      `;
+    }
+
+    function clearDetails() {
+      document.getElementById("details").innerHTML = "";
+    }
+  </script>
 </body>
+
 </html>
