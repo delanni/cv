@@ -119,11 +119,22 @@
     "category": "Work",
     "name": "Prezi.com",
     "from": "2016-06-13",
-    "to": "",
+    "to": "2017-08-23",
     "id": 10,
     "position": "Full stack engineer",
     "description": "Mainly working on collaborative features and document persistence using Scala and Typescript. Our team is responsible for maintaining the document consistency, we build tools and systems to improve editing experience and stability.",
     "extras": {
         "technologies": ["Typescript", "Scala", "React", "Haskell"]
+    }
+}, {
+    "category": "Work",
+    "name": "Klarna",
+    "from": "2017-09-11",
+    "to": "",
+    "id": 11,
+    "position": "Javascript Engineer",
+    "description": "Implementing Javascript back- and front-end solutions.",
+    "extras": {
+        "technologies": ["Javascript", "Node.js", "React", "React-Native"]
     }
 }]
