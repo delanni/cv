@@ -132,9 +132,10 @@
     "from": "2017-09-11",
     "to": "",
     "id": 11,
-    "position": "Javascript Engineer",
-    "description": "Implementing Javascript back- and front-end solutions.",
+    "position": "Javascript Full stack Engineer",
+    "description": "Implementing Javascript back- and front-end solutions for a platform-independent mobile application. Main focus on reducing tech debt by simplifying and centralizing service and client logic.",
     "extras": {
-        "technologies": ["Javascript", "Node.js", "React", "React-Native"]
+        "technologies": ["Javascript", "Node.js", "Flow", "React", "React-Native"]
     }
 }]
+
