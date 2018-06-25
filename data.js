@@ -111,7 +111,7 @@
     "to": "2016-05-29",
     "id": 9,
     "position": "Inisghts Engineer (big data engineer)",
-    "description": "Specializing in solutions that require advanced programming and software engineering knowledge along with analytical and communication skills.",
+    "description": "Specializing in data-analytics software solutions that require software building and architecture knowledge using Javascript, and R.",
     "extras": {
         "technologies": ["R", "Google App Script", "Shiny", "MySql"]
     }
@@ -122,9 +122,9 @@
     "to": "2017-08-23",
     "id": 10,
     "position": "Full stack engineer",
-    "description": "Mainly working on collaborative features and document persistence using Scala and Typescript. Our team is responsible for maintaining the document consistency, we build tools and systems to improve editing experience and stability.",
+    "description": "Mainly working on application critical collaborative- and document integrity features using Scala and Typescript, maintaining and developing microservices, and contributing to a high-performant front-end application. Managing our services through Terraform on AWS.",
     "extras": {
-        "technologies": ["Typescript", "Scala", "React", "Haskell"]
+        "technologies": ["Typescript", "Scala", "React", "Haskell", "AWS", "Terraform"]
     }
 }, {
     "category": "Work",
@@ -133,7 +133,7 @@
     "to": "",
     "id": 11,
     "position": "Javascript Full stack Engineer",
-    "description": "Implementing Javascript back- and front-end solutions for a platform-independent mobile application. Main focus on reducing tech debt by simplifying and centralizing service and client logic.",
+    "description": "Working as a full-stack engineer on the Klarna App for mobile and web using React and React Native. Managing E2E responsibility of applcation features, from design through deployment to monitoring. Advocating testing, Flow types, and maintainable, typed APIs.",
     "extras": {
         "technologies": ["Javascript", "Node.js", "Flow", "React", "React-Native"]
     }
