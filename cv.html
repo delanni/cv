@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <title>CV - Alex Szabo</title>
     <!-- Hey, welcome! Please disregard the laziness, but it's more than enough ;) -->
@@ -9,12 +10,12 @@
     <div id="container"> </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
     <script>
-        var converter = new showdown.Converter();
+        const converter = new showdown.Converter();
         fetch("cv.md")
         .then(response => response.text())
         .then(markdown => {
             console.log(markdown);
-            var html = converter.makeHtml(markdown);
+            const html = converter.makeHtml(markdown);
             document.getElementById("container").innerHTML = html;
         })
     </script>
