@@ -7,7 +7,7 @@ I'm strongly inclined towards technically correct, clean and functional code.
 ## Contact
 
 ||
-[Email](delanni.alex@gmail.com)
+[Email](mailto:delanni.alex@gmail.com)
 ||
 [Interactive CV](https://delanni.github.io/cv?src=md)
 ||
@@ -21,9 +21,11 @@ I'm strongly inclined towards technically correct, clean and functional code.
 ## Full-stack javascript engineer @ [Klarna](https://klarna.com) || 2017.09 - Presently
 
 ### Stockholm 2017 - 2018
+
 Working as a full-stack engineer on the Klarna App for mobile and web using React and React Native. Managing E2E responsibility of applcation features, from design through deployment to monitoring. Advocating testing, static types, functional programming, and maintainable code.
 
 ### Berlin 2018 - Presently
+
 Full-stack engineer on frameworks and user management. Working on business critical auth/auth systems, front-end frameworks and tooling, migrating and supporting legacy services, and designing new solutions.
 
 ## Full-stack engineer @ [Prezi](https://prezi.com) || 2016.07 - 2017.08

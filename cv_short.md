@@ -1,7 +1,7 @@
 # Alex Szabó
 
 ||
-[Email](delanni.alex@gmail.com)
+[Email](mailto:delanni.alex@gmail.com)
 ||
 [Interactive CV](https://delanni.github.io/cv?src=md)
 ||
