@@ -3,6 +3,7 @@
 I'm a full stack programmer, a critical thinker, a quick learner and a problem solver.
 I have proven myself valuable in various environments, and I am always looking for new challenges and opportunities to improve and impress.
 I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems.
+I have a combined 6+ years of experience in working with very different languages from Javascript, through Java, R, to Scala in different roles; I have a confident understanding of service architecture and common patterns solutions, infrastructure, and ops with AWS.
 
 ## Contact
 
