@@ -2,7 +2,7 @@
 
 I'm a full stack programmer, a critical thinker, a quick learner and a problem solver.
 I have proven myself valuable in various environments, and I am always looking for new challenges and opportunities to improve and impress.
-I'm strongly inclined towards technically correct, clean and functional code.
+I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems.
 
 ## Contact
 
@@ -18,15 +18,23 @@ I'm strongly inclined towards technically correct, clean and functional code.
 
 # Experience
 
-## Full-stack javascript engineer @ [Klarna](https://klarna.com) || 2017.09 - Presently
+## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - Presently
+
+Developing client facing features with Typescript/React/Redux, improving the Javascript technology stack and tooling, refactoring legacy code, while coaching peers.
+
+## Senior Full-stack javascript engineer @ [SunshineSmile/PlusDental GmbH.](https://plusdental.de/) || 2019.06 - 2019.09
+
+Role as an architect, mainly responsible for bettering engineering practises, reducing technical debt, coaching peers and developing new features in a _Javascript_ environment. Left early because management decided to kill the Javascript stack and replace it with PHP (lol).
+
+## Full-stack javascript engineer @ [Klarna](https://klarna.com) || 2017.09 - 2019.06
+
+### Berlin 2018 - 2019
+
+Full-stack engineer on frameworks and user management. Working on business critical auth/auth systems, front-end frameworks and tooling, migrating and supporting legacy services, and designing new solutions.
 
 ### Stockholm 2017 - 2018
 
 Working as a full-stack engineer on the Klarna App for mobile and web using React and React Native. Managing E2E responsibility of applcation features, from design through deployment to monitoring. Advocating testing, static types, functional programming, and maintainable code.
-
-### Berlin 2018 - Presently
-
-Full-stack engineer on frameworks and user management. Working on business critical auth/auth systems, front-end frameworks and tooling, migrating and supporting legacy services, and designing new solutions.
 
 ## Full-stack engineer @ [Prezi](https://prezi.com) || 2016.07 - 2017.08
 
