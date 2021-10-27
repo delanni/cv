@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <title>CV - Alex Szabo</title>
+    <!-- Hey, welcome! Please disregard the laziness, but it's more than enough ;) -->
+    <head>
+        <!-- Thanks to this guy https://github.com/jasonm23/markdown-css-themes -->
+        <link rel="stylesheet" href="foghorn.css"></style>
+    </head>
+<body>
+    <div id="container"> </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+    <script>
+        const converter = new showdown.Converter();
+        fetch("cv_short.md")
+        .then(response => response.text())
+        .then(markdown => {
+            console.log(markdown);
+            const html = converter.makeHtml(markdown);
+            document.getElementById("container").innerHTML = html;
+        })
+    </script>
+</body>
+
+</html>
