@@ -2,8 +2,8 @@
 
 I'm a full stack programmer, a critical thinker, a quick learner and a problem solver.
 I have proven myself valuable in various environments, and I am always looking for new challenges and opportunities to improve and impress.
-I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems.
-I have a combined 6+ years of experience in working with very different languages from Javascript, through Java, R, to Scala in different roles; I have a confident understanding of service architecture and common patterns solutions, infrastructure, and ops with AWS.
+I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems. I've also vested interest in growing the engineering organization around me through teaching, knowledge sharing and pair programming/debugging.
+I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
 ## Contact
 
@@ -19,9 +19,15 @@ I have a combined 6+ years of experience in working with very different language
 
 # Experience
 
-## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - Presently
+## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - Presently
 
-Developing client facing features with Typescript/React/Redux, improving the Javascript technology stack and tooling, refactoring legacy code, while coaching peers.
+Developer-Experience / DevOps engineer leading efforts in Front-end tooling/infrastructure, improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters for microservices.
+
+## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - 2020.12
+
+Working as a full-stack engineer on Prezi.com's client-facing frontend applications.
+Leading efforts in frontend application infrastructure; monorepo tooling, management, and automation, aiming to improve developer experience and delivery pipeline stability.
+Specializing in: Typescript/Javascript build tooling, code-to-customer tooling and workflow optimizations.
 
 ## Senior Full-stack javascript engineer @ [SunshineSmile/PlusDental GmbH.](https://plusdental.de/) || 2019.06 - 2019.09
 
@@ -64,9 +70,9 @@ I built material for, and held a 2 semester course in Javascript for enthusiasts
 
 # Expertise
 
-I have a combined 5+ years of experience in working with very different languages from Javascript, through R, Java, to Scala.
+I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS.
 
-I have a confident understanding of service architecture and common patterns solutions, infrastructure, and ops with AWS.
+I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
 # Studies
 
