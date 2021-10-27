@@ -1,8 +1,11 @@
 # Alex Szabó
 
 I'm a full stack programmer, a critical thinker, a quick learner and a problem solver.
+
 I have proven myself valuable in various environments, and I am always looking for new challenges and opportunities to improve and impress.
+
 I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems. I've also vested interest in growing the engineering organization around me through teaching, knowledge sharing and pair programming/debugging.
+
 I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
 ## Contact
