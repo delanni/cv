@@ -199,7 +199,7 @@
     "category": "Work",
     "name": "Prezi (Berlin)",
     "from": "2019-10-01",
-    "to": "",
+    "to": "2020-12-01",
     "id": 14,
     "position": "Senior Full-stack Engineer",
     "description": "Developing client facing features and improving the Javascript technology stack and tooling, while coaching peers.",
@@ -208,7 +208,29 @@
         "Typescript",
         "React",
         "Redux",
-        "Next.js"
+        "Lerna",
+        "Babel"
+      ]
+    }
+  },
+  {
+    "category": "Work",
+    "name": "Prezi (Budapest)",
+    "from": "2020-12-01",
+    "to": "",
+    "id": 15,
+    "position": "Senior Full-stack Engineer (tooling)",
+    "description": "Creating and improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters",
+    "extras": {
+      "technologies": [
+        "AWS",
+        "Terraform",
+        "Typescript",
+        "PNPM",
+        "Babel",
+        "Kubernetes",
+        "Python",
+        "Gradle"
       ]
     }
   }
