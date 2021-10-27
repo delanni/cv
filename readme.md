@@ -1,6 +1,6 @@
 # Interactive cv hub for Alex Szabo
 
-Link: [http://delanni.github.io/cv](http://delanni.github.io/cv), actual interval graphs [timeline](https://delanni.github.io/cv/timeline.html)
+Link: [http://delanni.github.io/cv](http://delanni.github.io/cv), check out my employment history through this interactive [timeline](https://delanni.github.io/cv/timeline.html)
 
 <!-- May as well just put the cv here -->
 
@@ -16,12 +16,21 @@ Link: [http://delanni.github.io/cv](http://delanni.github.io/cv), actual interva
 [Github](https://github.com/delanni)
 ||
 
-I have a combined 6+ years of experience in working with very different languages from Javascript, through Java, R, to Scala; I have a confident understanding of service architecture and common patterns solutions, infrastructure, and ops with AWS. 
-I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems.
+I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
-## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - Presently
+I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems. I've also vested interest in growing the engineering organization around me through teaching, knowledge sharing and pair programming/debugging.
 
-Developing client facing features with Typescript/React/Redux, improving the Javascript technology stack and tooling, refactoring legacy code, while coaching peers.
+# Experience
+
+## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - Presently
+
+Developer-Experience / DevOps engineer leading efforts in Front-end tooling/infrastructure, improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters for microservices.
+
+## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - 2020.12
+
+Working as a full-stack engineer on Prezi.com's client-facing frontend applications.
+Leading efforts in frontend application infrastructure; monorepo tooling, management, and automation, aiming to improve developer experience and delivery pipeline stability.
+Specializing in: Typescript/Javascript build tooling, code-to-customer tooling and workflow optimizations.
 
 ## Senior Full-stack javascript engineer @ [SunshineSmile/PlusDental GmbH.](https://plusdental.de/) || 2019.06 - 2019.09
 
@@ -31,11 +40,11 @@ Role as an architect, mainly responsible for bettering engineering practises, re
 
 ### Berlin 2018 - 2019
 
-Full-stack engineer on frameworks and user management. Working on business critical auth/auth systems, front-end frameworks and tooling, migrating and supporting legacy services, and designing new solutions.
+Full-stack engineer on frameworks and user management, working mostly with _Node.js_, _Java_, _Clojure_ and _AWS_. Working on business critical auth/auth systems, front-end frameworks and tooling, migrating and supporting legacy services, and designing new solutions.
 
 ### Stockholm 2017 - 2018
 
-Working as a full-stack engineer on the Klarna App for mobile and web using React and React Native. Managing E2E responsibility of applcation features, from design through deployment to monitoring. Advocating testing, static types, functional programming, and maintainable code.
+Working as a full-stack engineer on the Klarna App for mobile and web using React and React Native, working with _Javascript_, _Node.js_, _React/Redux_. Managing E2E responsibility of applcation features, from design through deployment to monitoring. Advocating testing, static types, functional programming, and maintainable code.
 
 ## Full-stack engineer @ [Prezi](https://prezi.com) || 2016.07 - 2017.08
 
