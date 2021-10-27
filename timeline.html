@@ -89,7 +89,8 @@
               var dataTable = new google.visualization.DataTable();
 
               dataTable.addColumn({ type: "string", id: "Category" });
-              dataTable.addColumn({ type: "string", id: "Alma" });
+              dataTable.addColumn({ type: "string", id: "Name" });
+              dataTable.addColumn({ type: "string", id: "Location" });
               dataTable.addColumn({ type: "date", id: "Start" });
               dataTable.addColumn({ type: "date", id: "End" });
 
@@ -110,6 +111,7 @@
           var row = [
             x.category,
             x.name,
+            x.location,
             new Date(x.from),
             new Date(x.to || Date.now())
           ];
@@ -121,6 +123,7 @@
           row.to = new Date(x.to || Date.now());
           row.description = x.description;
           row.position = x.position;
+          row.location = x.location;
           return row;
         });
         return dataSet;
@@ -170,9 +173,9 @@
       function renderDetails(obj) {
         var tagline = "";
         if (obj.category == "Work") {
-          tagline = `${obj.position} @ ${obj.name}`;
+          tagline = `${obj.position} @ ${obj.name}, ${obj.location}`;
         } else {
-          tagline = `Studying ${obj.name} @ ${obj.category}`;
+          tagline = `Studying ${obj.name} @ ${obj.category}, ${obj.location}`;
         }
         var duration = `${obj.from.toLocaleDateString()} - ${obj.to.toLocaleDateString()} (~${asTime(
           obj.to - obj.from
