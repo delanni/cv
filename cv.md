@@ -6,7 +6,7 @@ I have proven myself valuable in various environments, and I am always looking f
 
 I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems. I've also vested interest in growing the engineering organization around me through teaching, knowledge sharing and pair programming/debugging.
 
-I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
+I have a combined 10+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
 ## Contact
 
@@ -73,24 +73,24 @@ I built material for, and held a 2 semester course in Javascript for enthusiasts
 
 # Expertise
 
-I have a combined 9+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS.
+I have a combined 10+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS.
 
 I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
 
 # Studies
 
-## Software Engineer BSc & MSc @ [BME](http://www.bme.hu/?language=en)
+## Software Engineer BSc & MSc @ [BME](http://www.bme.hu/?language=en) || 2009 - 2015
 
 Thesis works:
 
-- Windows 8 Application Development
-- Game Development in Typescript using WebGL
+- Windows 8 Application Development (.Net, #C)
+- Game Development in Typescript using WebGL (Typescript)
 
-## Business Information Systems BSc @ [CUB](http://www.uni-corvinus.hu/index.php?id=eng)
+## Business Information Systems BSc @ [CUB](http://www.uni-corvinus.hu/index.php?id=eng) || 2011 - 2016
 
 Thesis works:
 
-- Portfolio optimization algorithms
+- Stock-trading portfolio optimization algorithms in practise
 
 # About
 
