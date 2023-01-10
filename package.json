@@ -1,0 +1,19 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "Link: [http://delanni.github.io/cv](http://delanni.github.io/cv), check out my employment history through this interactive [timeline](https://delanni.github.io/cv/timeline.html)",
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delanni/cv.git"
+  },
+  "keywords": [],
+  "author": "Alex Szabo (delanni.alex@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delanni/cv/issues"
+  },
+  "homepage": "https://github.com/delanni/cv#readme"
+}

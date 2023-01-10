@@ -22,7 +22,7 @@ I have a combined 10+ years of experience in working with a wide breadth of lang
 
 # Experience
 
-## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - Presently
+## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - 2023.01
 
 Developer-Experience / DevOps engineer leading efforts in Front-end tooling/infrastructure, improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters for microservices.
 
@@ -71,12 +71,6 @@ I was a part time Java developer. As part of a Scrum team I was responsible for 
 Held lab courses for Software Laboratory I. (C), Software Laboratory II. (C++).
 I built material for, and held a 2 semester course in Javascript for enthusiasts.
 
-# Expertise
-
-I have a combined 10+ years of experience in working with a wide breadth of languages and technologies from Javascript, through R, Java, to Scala and AWS.
-
-I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes.
-
 # Studies
 
 ## Software Engineer BSc & MSc @ [BME](http://www.bme.hu/?language=en) || 2009 - 2015
@@ -94,4 +88,4 @@ Thesis works:
 
 # About
 
-I like to code. I enjoy competitions, teaching and learning new things, hacking small experiments and prototypes in my free time.
+I dabble around with synthesizers and electronic music. I enjoy teaching and learning new things, hacking small experiments and prototypes in my free time.
