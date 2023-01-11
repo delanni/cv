@@ -25,16 +25,19 @@ I have a combined 10+ years of experience in working with a wide breadth of lang
 ## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - 2023.01
 
 Developer-Experience / DevOps engineer leading efforts in Front-end tooling/infrastructure, improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters for microservices.
+_(Typescript, Node.js, Python, Shell scripting, Kotlin, Webpack & Babel, Kubernetes)_
 
 ## Senior Full-stack engineer @ [Prezi](https://prezi.com/) || 2019.09 - 2020.12
 
 Working as a full-stack engineer on Prezi.com's client-facing frontend applications.
 Leading efforts in frontend application infrastructure; monorepo tooling, management, and automation, aiming to improve developer experience and delivery pipeline stability.
 Specializing in: Typescript/Javascript build tooling, code-to-customer tooling and workflow optimizations.
+_(Typescript, Python, React, Node.js, Webpack & Babel)_
 
 ## Senior Full-stack javascript engineer @ [SunshineSmile/PlusDental GmbH.](https://plusdental.de/) || 2019.06 - 2019.09
 
-Role as an architect, mainly responsible for bettering engineering practises, reducing technical debt, coaching peers and developing new features in a _Javascript_ environment. Left early because management decided to kill the Javascript stack and replace it with PHP (lol).
+Role as an architect, mainly responsible for bettering engineering practises, reducing technical debt, coaching peers and developing new features in a _Javascript_ environment. Left early because management decided to kill the Javascript stack.
+_(Node.js, Typescript, React, Koa.js, Graphql)_
 
 ## Full-stack javascript engineer @ [Klarna](https://klarna.com) || 2017.09 - 2019.06
 
