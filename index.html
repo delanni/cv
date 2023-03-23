@@ -3,11 +3,11 @@
   <head>
     <title>Alex Szabo - CVs and Interactive CV</title>
     <script>
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -26,20 +26,131 @@
       ga("create", "UA-53641010-10", "auto");
       ga("send", "pageview");
     </script>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+      #presentations-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      #articles-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .presentation-item {
+        width: 40%;
+        border: 1px solid rgb(168, 214, 255);
+        background-color: aliceblue;
+        border-radius: 3px;
+        padding: 1em;
+        margin: 1em;
+      }
+
+      .article-item {
+        width: 40%;
+        border: 1px solid pink;
+        background-color: rgb(255, 230, 234);
+        border-radius: 3px;
+        padding: 1em;
+        margin: 1em;
+      }
+
+      .caption {
+        font-style: italic;
+        font-size: 0.8em;
+        margin-top: -1em;
+      }
+    </style>
+
+    <script>
+      function renderPersonalContent(containerId, data, contentKind) {
+        const container = document.getElementById(containerId);
+        data.forEach((item) => {
+          const itemElement = document.createElement("div");
+          itemElement.classList.add(`${contentKind}-item`);
+          itemElement.innerHTML = `
+            <h3>${item.title}</h3>
+            <h5 class="caption">${item.date}</h5>
+            <p>${item.description}</p>
+            <p>
+              <a target="_blank" href="${item.url}">Link to ${contentKind}</a>
+            </p>
+          `;
+          container.appendChild(itemElement);
+        });
+      }
+
+      function handlePersonalContentError(error, containerId, contentKind) {
+        console.log(error);
+        const container = document.getElementById(containerId);
+        container.innerHTML = `
+          <p>Sorry, there was an error loading the ${contentKind}.</p>
+        `;
+      }
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   </head>
   <body>
-    Creation in progress, in the meantime check out:
+    <h1>Alex Szabo - CVs and Interactive CV</h1>
+    <h3>
+      <small>Please don't mind my university-teacher-esque visual style</small>
+    </h3>
+
+    <h2>CVs</h2>
     <ul>
       <li>
         <a href="timeline.html">The timeline of my work and study history 🤝</a>
       </li>
       <li>
-        Current CV in <a href="cv">HTML</a>, same but <a href="cv_short">shorter</a>, same but <a href="cv.md">Markdown 🤓</a>
+        Current CV in <a href="cv">HTML</a>, same but
+        <a href="cv_short">shorter</a>, same but <a href="cv.md">Markdown 🤓</a>
       </li>
       <li>
-        Current CV in <a href="cv_alex_szabo_2023_01.pdf">markdown, but as a pdf 👔</a>
+        Current CV in
+        <a href="cv_alex_szabo_2023_01.pdf">markdown, but as a pdf 👔</a>
       </li>
+      <li></li>
     </ul>
+
+    <h2>Presentations</h2>
+    <h5 class="caption">Mostly presentations about web 3D and audio</h5>
+    <section id="presentations-container"></section>
+    <script>
+      fetch("./data/presentations.json")
+        .then((response) => response.json())
+        .then((presentations) => {
+          renderPersonalContent(
+            "presentations-container",
+            presentations,
+            "presentation"
+          );
+        })
+        .catch((error) => {
+          handlePersonalContentError(
+            error,
+            "presentations-container",
+            "presentations"
+          );
+        });
+    </script>
+
+    <h2>Articles</h2>
+    <h5 class="caption">
+      Mostly satirical articles (<a href="https://medium.com/@alex-on-the-web/"
+        >from medium</a
+      >)
+    </h5>
+    <section id="articles-container"></section>
+    <script>
+      fetch("./data/articles.json")
+        .then((response) => response.json())
+        .then((articles) => {
+          renderPersonalContent("articles-container", articles, "article");
+        })
+        .catch((error) => {
+          handlePersonalContentError(error, "articles-container", "articles");
+        });
+    </script>
   </body>
 </html>

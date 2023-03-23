@@ -1,0 +1,20 @@
+[
+  {
+    "title": "3D interactive data visualization with React | Three.js Workshop",
+    "date": "Created sometime mid 2021",
+    "description": "My ~2h workshop on using React Three Fiber to create a performant 3D application in your browser (hosted by Bene:studio)",
+    "url": "https://www.youtube.com/watch?v=Xq-t7y4OrFE"
+  },
+  {
+    "title": "Efficient/sufficient 3D on the web with React Three Fiber (2021)",
+    "date": "Created sometime late 2021",
+    "description": "My ~10m Prezi#draft conference talk about creating easy 3D graphics in your browser with React Three Fiber",
+    "url": "https://www.youtube.com/watch?v=3OeBlZGndAo"
+  },
+  {
+    "title": "Sound synthesis on the Web - WebAudioAPI intro (2022)",
+    "date": "Created sometime in July, 2022",
+    "description": "My ~40m Prezi#draft conference talk about creating sounds in your browser with the WebAudioAPI",
+    "url": "https://www.youtube.com/watch?v=m-a412yyYbc"
+  }
+]
