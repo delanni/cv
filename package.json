@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "version": "1.0.0",
-  "description": "Link: [http://delanni.github.io/cv](http://delanni.github.io/cv), check out my employment history through this interactive [timeline](https://delanni.github.io/cv/timeline.html)",
+  "description": "Personal portfolio and CV; Link: [http://delanni.github.io/cv](http://delanni.github.io/cv)",
   "scripts": {
     "start": "http-server"
   },

@@ -28,11 +28,11 @@
       }
     </style>
     <script>
-      (function(i, s, o, g, r, a, m) {
+      (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
         (i[r] =
           i[r] ||
-          function() {
+          function () {
             (i[r].q = i[r].q || []).push(arguments);
           }),
           (i[r].l = 1 * new Date());
@@ -59,7 +59,7 @@
       src="https://www.gstatic.com/charts/loader.js"
     ></script>
     <div>Click the timeline to browse</div>
-    <div id="timeline" style="height: 300px;"></div>
+    <div id="timeline" style="height: 300px"></div>
     <div id="sums"></div>
     <hr />
     <div id="details"></div>
@@ -73,10 +73,13 @@
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        fetch("data.json")
-          .then(result => result.json(), err => console.error(err))
+        fetch("./data/employment.json")
           .then(
-            json => {
+            (result) => result.json(),
+            (err) => console.error(err)
+          )
+          .then(
+            (json) => {
               var data = parse(json);
 
               var container = document.getElementById("timeline");
@@ -99,19 +102,19 @@
 
               renderSums(data);
             },
-            err => {
+            (err) => {
               console.error(err);
             }
           );
       }
 
       function parse(jsonData) {
-        var dataSet = jsonData.map(x => {
+        var dataSet = jsonData.map((x) => {
           var row = [
             x.category,
             x.name,
             new Date(x.from),
-            new Date(x.to || Date.now())
+            new Date(x.to || Date.now()),
           ];
           row.id = x.id;
           row.extras = x.extras;
@@ -129,11 +132,11 @@
 
       function renderSums(data) {
         var schools = data.filter(
-          x =>
+          (x) =>
             x.name.toLowerCase().indexOf("bsc") >= 0 ||
             x.name.toLowerCase().indexOf("msc") >= 0
         );
-        var work = data.filter(x => x.category.toLowerCase() == "work");
+        var work = data.filter((x) => x.category.toLowerCase() == "work");
 
         var timeReducer = (total, next) => total + (next.to - next.from);
         var totalSchoolTime = schools.reduce(timeReducer, 0);
@@ -181,8 +184,8 @@
 
         var description = obj.description;
         var extras = "";
-        var techAsStickerList = x =>
-          x.map(tech => `<span class='tech-sticker'>${tech}</span>`).join("");
+        var techAsStickerList = (x) =>
+          x.map((tech) => `<span class='tech-sticker'>${tech}</span>`).join("");
         if (obj.extras.thesis) {
           extras = `<div class="thesis"> 
                 <div class="tesis-title"> Thesis: ${
