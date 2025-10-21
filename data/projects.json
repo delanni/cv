@@ -1,0 +1,35 @@
+[
+  {
+    "title": "3D interactive data visualization with React | Three.js Workshop | Code and Material",
+    "date": "~2021",
+    "description": "Code for the workshop project. Check the related presentation video for more details.",
+    "url": "https://github.com/delanni/react-three-flight-visualization"
+  },
+  {
+    "title": "Hydralisk | Programmable, playable milkdrop visualizer in your browser",
+    "date": "~2023-2025",
+    "description": "A custom fork of Olivia Jack's Hydra, with added features. Cool for programmers trying to VJ.",
+    "url": "https://delanni.github.io/hydralisk/",
+    "source": "https://github.com/delanni/hydralisk/tree/gh-pages"
+  },
+  {
+    "title": "Game Idea Generator | Random game idea generator",
+    "date": "~2015",
+    "description": "A random game idea generator. It's serious business.",
+    "url": "https://delanni.github.io/gameIdeaGen/",
+    "source": "https://github.com/delanni/gameIdeaGen"
+  },
+  {
+    "title": "Multiplayer Tank Game | A game for my TV and phone (2015)",
+    "date": "~2015",
+    "description": "It's actually an interesting, but not so greatly implemented game: you share one big screen that runs the game, and multiple phones connect as players.",
+    "source": "https://github.com/delanni/multiplayerTank",
+    "url": "TODO: est 2015"
+  },
+  {
+    "title": "Django Untrained | My soundcloud link",
+    "date": "~2022",
+    "description": "Synths, mixes, and links to other projects.",
+    "url": "https://soundcloud.com/django-untrained"
+  }
+]

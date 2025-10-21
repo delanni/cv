@@ -47,13 +47,18 @@
         flex-wrap: wrap;
       }
 
+      #projects-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
       .presentation-item {
         width: 40%;
         border: 1px solid rgb(168, 214, 255);
         background-color: aliceblue;
         border-radius: 3px;
-        padding: 1em;
-        margin: 1em;
+        padding: 0.5em;
+        margin: 0.5em;
       }
 
       .article-item {
@@ -61,8 +66,17 @@
         border: 1px solid pink;
         background-color: rgb(255, 230, 234);
         border-radius: 3px;
-        padding: 1em;
-        margin: 1em;
+        padding: 0.5em;
+        margin: 0.5em;
+      }
+
+      .project-item {
+        width: 40%;
+        border: 1px solid green;
+        background-color: lightgreen;
+        border-radius: 3px;
+        padding: 0.5em;
+        margin: 0.5em;
       }
 
       .caption {
@@ -83,7 +97,15 @@
             <h5 class="caption">${item.date}</h5>
             <p>${item.description}</p>
             <p>
-              <a target="_blank" href="${item.url}">Link to ${contentKind}</a>
+              ${
+                item.url
+                  ? `øø <a target="_blank" href="${item.url}">Link to ${contentKind}</a>`
+                  : ""
+              } ${
+            item.source
+              ? `∑∑ <a target="_blank" href="${item.source}">*Source code*</a>`
+              : ""
+          }
             </p>
           `;
           container.appendChild(itemElement);
@@ -135,6 +157,20 @@
       </li>
       <li></li>
     </ul>
+
+    <h2>Fun projects</h2>
+    <h5 class="caption">Some weird or interesting stuff on Github</h5>
+    <section id="projects-container"></section>
+    <script>
+      fetch("./data/projects.json")
+        .then((response) => response.json())
+        .then((projects) => {
+          renderPersonalContent("projects-container", projects, "project");
+        })
+        .catch((error) => {
+          handlePersonalContentError(error, "projects-container", "projects");
+        });
+    </script>
 
     <h2>Presentations</h2>
     <h5 class="caption">Mostly presentations about web 3D and audio</h5>
