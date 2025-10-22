@@ -31,5 +31,11 @@
     "date": "~2022",
     "description": "Synths, mixes, and links to other projects.",
     "url": "https://soundcloud.com/django-untrained"
-  }
+  },
+  {
+     "title": "Incredibird! | JavaScript game in 13kb", 
+     "date": "2013",
+     "description": "My own stupid game, made from the ground up, in 13kb",
+     "url": "https://delanni.github.io/js13k",
+     "source": "https://github.com/delanni/js13k"
 ]
