@@ -10,13 +10,18 @@
 [Github](https://github.com/delanni)
 ||
 
-I have a combined 10+ years of experience in working with a wide breadth of languages and technologies from Javascript/Typescript, through R, Java, to Scala and AWS; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and delivery processes. I take end-to-end ownership of my contribution, I stand up for my values and try to improve engineering practises around me.
+I have a combined 12+ years of experience in working with a wide breadth of languages and technologies from Javascript/Typescript, through R, Java, to Scala, AWS and GCP; I have a confident understanding of service architecture and common patterns solutions, infrastructure, ops with AWS and GCP, and delivery processes. I take end-to-end ownership of my contribution, I stand up for my values and try to improve engineering practises around me.
 
 I'm strongly inclined towards technically correct, clean and functional code. My engineering drive is mostly in solving tooling/frameworking, architecture and software quality problems. I've also vested interest in growing the engineering organization around me through teaching, knowledge sharing and pair programming/debugging.
 
 # Experience
 
-## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - 2023.01
+## Senior Software Engineer - Kibana Operations @ [Elastic](https://www.elastic.co/) || 2023.05 - present
+
+Developer-experience engineer for the Kibana project, helping developers with daily CI, build, tooling, automation, and infrastructure problems. Working on build pipelines, testing infrastructure, and developer tooling to improve the productivity and reliability of one of the largest TypeScript codebases in the world.
+_(Typescript, Node.js, Python, Shell scripting, GCP, Terraform, Kubernetes, Bazel)_
+
+## Staff Full-stack engineer (tooling) @ [Prezi](https://prezi.com/) || 2020.12 - 2022.12
 
 Developer-Experience / DevOps engineer leading efforts in Front-end tooling/infrastructure, improving front-end developer tooling, CI/CD, workflows and front-end architecture. Maintaining CI/CD and tooling kubernetes clusters for microservices.
 _(Typescript, Node.js, Python, Shell scripting, Kotlin, Webpack & Babel, Kubernetes)_
