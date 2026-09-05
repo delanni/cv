@@ -3,14 +3,12 @@ function enableBananaMode() {
   if (bananaMode) return;
   bananaMode = true;
   const bananaModeButton = document.getElementById("bananamode");
-  const bananaModeBadge = document.createElement("span");
-  bananaModeBadge.id = "bananamode";
-  bananaModeBadge.className = "banana-mode-enabled";
-  bananaModeBadge.textContent = "🍌";
-  bananaModeBadge.setAttribute("aria-label", "Chief Banana Mode enabled");
-  bananaModeBadge.setAttribute("title", "Chief Banana Mode enabled");
-  bananaModeBadge.setAttribute("role", "img");
-  bananaModeButton.replaceWith(bananaModeBadge);
+  bananaModeButton.textContent = "🍌";
+  bananaModeButton.classList.add("banana-mode-enabled");
+  bananaModeButton.removeAttribute("onclick");
+  bananaModeButton.setAttribute("aria-disabled", "true");
+  bananaModeButton.setAttribute("aria-label", "Chief Banana Mode enabled");
+  bananaModeButton.setAttribute("title", "Chief Banana Mode enabled");
 
   // Simulate particle physics explosion with the banana emoji on click
   function expelBanana(e) {
