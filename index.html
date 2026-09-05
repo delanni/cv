@@ -84,6 +84,43 @@
         font-size: 0.8em;
         margin-top: -1em;
       }
+
+      #bananamode {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 1px solid #d8d8d8;
+        border-radius: 50%;
+        background: #fff7d6;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
+        font-size: 1.75rem;
+        text-decoration: none;
+        z-index: 999;
+      }
+
+      #bananamode:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+      }
+
+      #bananamode:focus-visible {
+        outline: 3px solid #2484c1;
+        outline-offset: 4px;
+      }
+
+      #bananamode.banana-mode-enabled,
+      #bananamode:disabled {
+        background: #ffe58f;
+        border-color: #caa700;
+        box-shadow: none;
+        cursor: default;
+        transform: none;
+      }
     </style>
 
     <script>
@@ -135,11 +172,6 @@
       <li>
         <a href="https://www.linkedin.com/in/alxszabo/">LinkedIn</a>
       </li>
-      <li>
-        <a id="bananamode" onclick="enableBananaMode()" href="#"
-          >Enable Chief Banana Mode (🙈)</a
-        >
-      </li>
     </ul>
 
     <h2>CVs</h2>
@@ -161,6 +193,15 @@
     <h2>Fun projects</h2>
     <h5 class="caption">Some weird or interesting stuff on Github</h5>
     <section id="projects-container"></section>
+    <button
+      id="bananamode"
+      onclick="enableBananaMode()"
+      type="button"
+      aria-label="Enable Chief Banana Mode"
+      title="Enable Chief Banana Mode"
+    >
+      🐵
+    </button>
     <script>
       fetch("./data/projects.json")
         .then((response) => response.json())

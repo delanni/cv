@@ -2,8 +2,12 @@ let bananaMode = false;
 function enableBananaMode() {
   if (bananaMode) return;
   bananaMode = true;
-  document.getElementById("bananamode").textContent =
-    "Enable Chief Banana Mode (🐵)";
+  const bananaModeButton = document.getElementById("bananamode");
+  bananaModeButton.textContent = "🍌";
+  bananaModeButton.classList.add("banana-mode-enabled");
+  bananaModeButton.disabled = true;
+  bananaModeButton.setAttribute("aria-label", "Chief Banana Mode enabled");
+  bananaModeButton.setAttribute("title", "Chief Banana Mode enabled");
 
   // Simulate particle physics explosion with the banana emoji on click
   function expelBanana(e) {
