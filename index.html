@@ -108,6 +108,11 @@
         transform: scale(1.05);
       }
 
+      #bananamode:focus-visible {
+        outline: 3px solid #2484c1;
+        outline-offset: 4px;
+      }
+
       #bananamode.enabled {
         background: #ffe58f;
       }
@@ -183,14 +188,15 @@
     <h2>Fun projects</h2>
     <h5 class="caption">Some weird or interesting stuff on Github</h5>
     <section id="projects-container"></section>
-    <a
+    <button
       id="bananamode"
       onclick="enableBananaMode()"
-      href="#"
+      type="button"
       aria-label="Enable Chief Banana Mode"
       title="Enable Chief Banana Mode"
-      >🐵</a
     >
+      🐵
+    </button>
     <script>
       fetch("./data/projects.json")
         .then((response) => response.json())
