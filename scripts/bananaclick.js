@@ -5,8 +5,7 @@ function enableBananaMode() {
   const bananaModeButton = document.getElementById("bananamode");
   bananaModeButton.textContent = "🍌";
   bananaModeButton.classList.add("banana-mode-enabled");
-  bananaModeButton.removeAttribute("onclick");
-  bananaModeButton.setAttribute("aria-disabled", "true");
+  bananaModeButton.disabled = true;
   bananaModeButton.setAttribute("aria-label", "Chief Banana Mode enabled");
   bananaModeButton.setAttribute("title", "Chief Banana Mode enabled");
 
