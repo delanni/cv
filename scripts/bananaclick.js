@@ -5,7 +5,7 @@ function enableBananaMode() {
   const bananaModeButton = document.getElementById("bananamode");
   const bananaModeBadge = document.createElement("span");
   bananaModeBadge.id = "bananamode";
-  bananaModeBadge.className = "enabled";
+  bananaModeBadge.className = "banana-mode-enabled";
   bananaModeBadge.textContent = "🍌";
   bananaModeBadge.setAttribute("aria-label", "Chief Banana Mode enabled");
   bananaModeBadge.setAttribute("title", "Chief Banana Mode enabled");
